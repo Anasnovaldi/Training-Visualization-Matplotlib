@@ -1,127 +1,73 @@
-# 📊 Data Visualization CLI with Python
+# Data Visualization CLI
 
-A simple Command Line Interface (CLI) application for visualizing data from **CSV** and **Excel** files using **Python**, **Pandas**, and **Matplotlib**.
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
+![Pandas](https://img.shields.io/badge/Pandas-Library-150458?logo=pandas)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-orange)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-## ✨ Features
+# Data Visualization CLI
 
-* 📈 Line Chart (Plot Chart)
-* 📊 Bar Chart
-* 🥧 Pie Chart
-* Support **CSV (.csv)** and **Excel (.xlsx)** files
-* Compare two data series on Bar Chart and Line Chart
-* Custom chart title, labels, and colors through terminal input
+A command-line application built with **Python** for visualizing data from **CSV** and **Excel** files using **Pandas** and **Matplotlib**.
 
----
+## Language
 
-## 🛠️ Built With
+* Python 3
 
-* Python 3.x
-* Pandas
-* Matplotlib
-* Openpyxl (for Excel files)
+## Libraries
 
----
+* pandas
+* matplotlib
+* openpyxl
 
-## 📦 Installation
-
-Clone this repository
-
-```bash
-git clone https://github.com/yourusername/your-repository.git
-```
-
-Move into the project folder
-
-```bash
-cd your-repository
-```
-
-Install the required libraries
+Install dependencies:
 
 ```bash
 pip install pandas matplotlib openpyxl
 ```
 
----
+## Features
 
-## 🚀 How to Run
+* Bar Chart
+* Line Chart
+* Pie Chart
+* CSV and Excel support
+* Single or multiple data comparison
+* Custom chart title, labels, and colors
 
-Run the program using:
+## Usage
+
+Run the application:
 
 ```bash
 python LatihanMatplotlib.py
 ```
 
----
+Place your `.csv` or `.xlsx` file in the same directory as the program, then follow the prompts displayed in the terminal.
 
-## 📁 Supported File Formats
+## Data Format
 
-### CSV
+**Bar Chart / Line Chart**
 
-```csv
-Day,Week1,Week2
-Monday,10,15
-Tuesday,15,20
-Wednesday,20,25
-Thursday,30,35
-Friday,40,45
-```
+| Category | Value 1 | Value 2 |
+| -------- | ------: | ------: |
+| A        |      10 |      15 |
+| B        |      20 |      25 |
+| C        |      30 |      35 |
 
-### Excel
+**Pie Chart**
 
-The Excel file should have the same table structure as the CSV example above.
+| Category | Value |
+| -------- | ----: |
+| A        |    20 |
+| B        |    35 |
+| C        |    45 |
 
----
+## Notes
 
-## 🥧 Pie Chart Format
-
-Pie Chart requires **only two columns**:
-
-| Category  | Value |
-| --------- | ----: |
-| Product A |    20 |
-| Product B |    35 |
-| Product C |    45 |
-
-Example CSV:
-
-```csv
-Product,Sales
-Product A,20
-Product B,35
-Product C,45
-```
-
----
-
-## 📊 Bar Chart & Line Chart Format
-
-These charts require:
-
-* One column as the X-axis
-* One or two numeric columns as the Y-axis
-
-Example:
-
-```csv
-Day,Week1,Week2
-Monday,10,15
-Tuesday,20,18
-Wednesday,15,22
-Thursday,25,30
-Friday,35,40
-```
-
----
-
-## 📌 Notes
-
-* Make sure the CSV or Excel file is in the same folder as the program.
 * Column names are case-sensitive.
-* Pie Chart is designed for proportional (part-to-whole) data.
+* Pie Chart supports one label column and one numeric value column.
+* CSV and Excel files should be located in the same directory as the application.
 
----
+## License
 
-## 👨‍💻 Author
-
-Developed as a learning project for Python data visualization using Pandas and Matplotlib.
+This project is intended for learning purposes and personal use.
